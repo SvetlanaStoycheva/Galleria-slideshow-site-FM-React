@@ -138,6 +138,9 @@ Styles
 Home Page
 ===============
 */
+.main {
+  max-width: var(--max-width);
+}
 .homepage-header {
   width: 100vw;
   padding: 2rem;
@@ -145,14 +148,23 @@ Home Page
   justify-content: space-between;
   align-items: center;
 }
-.start-slideshow {
+.start-slideshow-btn {
+  border: transparent;
+  background: transparent;
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: var(--clr-primary-light-gray);
+  transition: var(--transition);
   margin-bottom: 0;
   cursor: pointer;
+}
+.start-slideshow {
+  color: var(--clr-primary-light-gray);
+  transition: var(--transition);
+}
+.start-slideshow:hover {
+  color: var(--clr-primary-gray);
 }
 .gallery-container {
   width: 100vw;
@@ -176,6 +188,10 @@ Home Page
 .single-gallery-image-text h1 {
   font-size: 2rem;
   line-height: 2rem;
+}
+.homepage-line {
+  border-top: 2px solid var(--clr-primary-very-light-gray);
+  margin-bottom: 1rem;
 }
 @media screen and (min-width: 780px) {
   .gallery-container {
@@ -203,7 +219,13 @@ Home Page
   .gallery-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
+  .navbar-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .start-slideshow-btn {
+    margin-right: 4rem;
+  }
   .homepage-gallery-image {
     width: 22vw;
     min-height: 30vh;
