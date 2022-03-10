@@ -22,11 +22,35 @@ import artemisiaS from './assets/penitent-magdalene/hero-small.jpg';
 import artemisiaL from './assets/penitent-magdalene/hero-large.jpg';
 import artemisiaG from './assets/penitent-magdalene/gallery.jpg';
 //
-// import picasso from ;
-// import vermeerThumb from ;
-// import vermeerS from ;
-// import vermeerL from ;
-// import vermeerG from ;
+import rembrandt from './assets/the-storm-on-the-sea-of-galilee/artist.jpg';
+import rembrandtThumb from './assets/the-storm-on-the-sea-of-galilee/thumbnail.jpg';
+import rembrandtS from './assets/the-storm-on-the-sea-of-galilee/hero-small.jpg';
+import rembrandtL from './assets/the-storm-on-the-sea-of-galilee/hero-large.jpg';
+import rembrandtG from './assets/the-storm-on-the-sea-of-galilee/gallery.jpg';
+//
+import hokusai from './assets/the-great-wave-off-kanagawa/artist.jpg';
+import hokusaiThumb from './assets/the-great-wave-off-kanagawa/thumbnail.jpg';
+import hokusaiS from './assets/the-great-wave-off-kanagawa/hero-small.jpg';
+import hokusaiL from './assets/the-great-wave-off-kanagawa/hero-large.jpg';
+import hokusaiG from './assets/the-great-wave-off-kanagawa/gallery.jpg';
+//
+import goghSelf from './assets/van-gogh-self-portrait/artist.jpg';
+import goghSelfThumb from './assets/van-gogh-self-portrait/thumbnail.jpg';
+import goghSelfS from './assets/van-gogh-self-portrait/hero-small.jpg';
+import goghSelfL from './assets/van-gogh-self-portrait/hero-large.jpg';
+import goghSelfG from './assets/van-gogh-self-portrait/gallery.jpg';
+//
+import rousseau from './assets/the-sleeping-gypsy/artist.jpg';
+import rousseauThumb from './assets/the-sleeping-gypsy/thumbnail.jpg';
+import rousseauS from './assets/the-sleeping-gypsy/hero-small.jpg';
+import rousseauL from './assets/the-sleeping-gypsy/hero-large.jpg';
+import rousseauG from './assets/the-sleeping-gypsy/gallery.jpg';
+//
+// import rousseau from ;
+// import rousseauThumb from ;
+// import rousseauS from ;
+// import rousseauL from ;
+// import rousseauG from ;
 
 export const data = [
   {
@@ -113,16 +137,16 @@ export const data = [
       "The painting, in vertical format, shows a close-up view of Christ's disciples struggling frantically against the heavy storm to regain control of their fishing boat. A huge wave beats the bow and rips the sail. One of the disciples is seen vomiting over the side. Another one, looking directly out at the viewer, is a self-portrait of the artist. Only Christ, depicted on the right, remains calm.",
     source: 'https://en.wikipedia.org/wiki/The_Storm_on_the_Sea_of_Galilee',
     artist: {
-      image: './assets/the-storm-on-the-sea-of-galilee/artist.jpg',
+      image: rembrandt,
       name: 'Rembrandt',
     },
     images: {
-      thumbnail: './assets/the-storm-on-the-sea-of-galilee/thumbnail.jpg',
+      thumbnail: rembrandtThumb,
       hero: {
-        small: './assets/the-storm-on-the-sea-of-galilee/hero-small.jpg',
-        large: './assets/the-storm-on-the-sea-of-galilee/hero-large.jpg',
+        small: rembrandtS,
+        large: rembrandtL,
       },
-      gallery: './assets/the-storm-on-the-sea-of-galilee/gallery.jpg',
+      gallery: rembrandtG,
     },
   },
   {
@@ -132,16 +156,16 @@ export const data = [
       'The Great Wave off Kanagawa (Japanese: 神奈川沖浪裏, Hepburn: Kanagawa-oki Nami Ura, lit. "Under the Wave off Kanagawa"), also known as The Great Wave or simply The Wave, is a woodblock print by the Japanese ukiyo-e artist Hokusai. It was published sometime between 1829 and 1833 in the late Edo period as the first print in Hokusai\'s series Thirty-six Views of Mount Fuji. The image depicts an enormous wave threatening three boats off the coast in the Sagami Bay (Kanagawa Prefecture) while Mount Fuji rises in the background.',
     source: 'https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa',
     artist: {
-      image: './assets/the-great-wave-off-kanagawa/artist.jpg',
+      image: hokusai,
       name: 'Hokusai',
     },
     images: {
-      thumbnail: './assets/the-great-wave-off-kanagawa/thumbnail.jpg',
+      thumbnail: hokusaiThumb,
       hero: {
-        small: './assets/the-great-wave-off-kanagawa/hero-small.jpg',
-        large: './assets/the-great-wave-off-kanagawa/hero-large.jpg',
+        small: hokusaiS,
+        large: hokusaiL,
       },
-      gallery: './assets/the-great-wave-off-kanagawa/gallery.jpg',
+      gallery: hokusaiG,
     },
   },
   {
@@ -151,16 +175,16 @@ export const data = [
       'This self-portrait was one of about 32 produced over a 10-year period, and these were an important part of his work as a painter; he painted himself because he often lacked the money to pay for models. He took the painting with him to Auvers-sur-Oise, near Paris, where he showed it to Dr. Paul Gachet, who thought it was "absolutely fanatical". Art historians are divided as to whether this painting or Self-portrait without beard is Van Gogh\'s final self-portrait. The art historians Ingo F. Walther and Jan Hulsker consider this to be the last.',
     source: 'https://en.wikipedia.org/wiki/Van_Gogh_self-portrait_(1889)',
     artist: {
-      image: './assets/van-gogh-self-portrait/artist.jpg',
+      image: goghSelf,
       name: 'Vincent Van Gogh',
     },
     images: {
-      thumbnail: './assets/van-gogh-self-portrait/thumbnail.jpg',
+      thumbnail: goghSelfThumb,
       hero: {
-        small: './assets/van-gogh-self-portrait/hero-small.jpg',
-        large: './assets/van-gogh-self-portrait/hero-large.jpg',
+        small: goghSelfS,
+        large: goghSelfL,
       },
-      gallery: './assets/van-gogh-self-portrait/gallery.jpg',
+      gallery: goghSelfG,
     },
   },
   {
@@ -170,16 +194,16 @@ export const data = [
       'The Sleeping Gypsy (French: La Bohémienne endormie) is an 1897 oil painting by French Naïve artist Henri Rousseau (1844–1910). It is a fantastical depiction of a lion musing over a sleeping woman on a moonlit night. Rousseau first exhibited the painting at the 13th Salon des Indépendants, and tried unsuccessfully to sell it to the mayor of his hometown, Laval. Instead, it entered the private collection of a Parisian charcoal merchant where it remained until 1924, when it was discovered by the art critic Louis Vauxcelles.',
     source: 'https://en.wikipedia.org/wiki/The_Sleeping_Gypsy',
     artist: {
-      image: './assets/the-sleeping-gypsy/artist.jpg',
+      image: rousseau,
       name: 'Henri Rousseau',
     },
     images: {
-      thumbnail: './assets/the-sleeping-gypsy/thumbnail.jpg',
+      thumbnail: rousseauThumb,
       hero: {
-        small: './assets/the-sleeping-gypsy/hero-small.jpg',
-        large: './assets/the-sleeping-gypsy/hero-large.jpg',
+        small: rousseauS,
+        large: rousseauL,
       },
-      gallery: './assets/the-sleeping-gypsy/gallery.jpg',
+      gallery: rousseauG,
     },
   },
   {
