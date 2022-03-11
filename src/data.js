@@ -46,6 +46,24 @@ import rousseauS from './assets/the-sleeping-gypsy/hero-small.jpg';
 import rousseauL from './assets/the-sleeping-gypsy/hero-large.jpg';
 import rousseauG from './assets/the-sleeping-gypsy/gallery.jpg';
 //
+import vinci from './assets/lady-with-an-ermine/artist.jpg';
+import vinciThumb from './assets/lady-with-an-ermine/thumbnail.jpg';
+import vinciS from './assets/lady-with-an-ermine/hero-small.jpg';
+import vinciL from './assets/lady-with-an-ermine/hero-large.jpg';
+import vinciG from './assets/lady-with-an-ermine/gallery.jpg';
+//
+import gogh3 from './assets/the-night-cafe/artist.jpg';
+import gogh3Thumb from './assets/the-night-cafe/thumbnail.jpg';
+import gogh3S from './assets/the-night-cafe/hero-small.jpg';
+import gogh3L from './assets/the-night-cafe/hero-large.jpg';
+import gogh3G from './assets/the-night-cafe/gallery.jpg';
+//
+import poul from './assets/the-basket-of-apples/artist.jpg';
+import poulThumb from './assets/the-basket-of-apples/thumbnail.jpg';
+import poulS from './assets/the-basket-of-apples/hero-small.jpg';
+import poulL from './assets/the-basket-of-apples/hero-large.jpg';
+import poulG from './assets/the-basket-of-apples/gallery.jpg';
+//
 // import rousseau from ;
 // import rousseauThumb from ;
 // import rousseauS from ;
@@ -213,16 +231,16 @@ export const data = [
       'The Lady with an Ermine (Italian: Dama con l\'ermellino [ˈdaːma kon lermelˈliːno]; Polish: Dama z gronostajem) is a portrait painting widely attributed to the Italian Renaissance artist Leonardo da Vinci. Dated to c. 1489–1491, the work is painted in oils on a panel of walnut wood. Its subject is Cecilia Gallerani, a mistress of Ludovico Sforza ("Il Moro"), Duke of Milan; Leonardo was painter to the Sforza court at the time of its execution. It is one of only four surviving portraits of women painted by Leonardo, the others being Ginevra de\' Benci, La Belle Ferronnière and the Mona Lisa',
     source: 'https://en.wikipedia.org/wiki/Lady_with_an_Ermine',
     artist: {
-      image: './assets/lady-with-an-ermine/artist.jpg',
+      image: vinci,
       name: 'Leonardo da Vinci',
     },
     images: {
-      thumbnail: './assets/lady-with-an-ermine/thumbnail.jpg',
+      thumbnail: vinciThumb,
       hero: {
-        small: './assets/lady-with-an-ermine/hero-small.jpg',
-        large: './assets/lady-with-an-ermine/hero-large.jpg',
+        small: vinciS,
+        large: vinciL,
       },
-      gallery: './assets/lady-with-an-ermine/gallery.jpg',
+      gallery: vinciG,
     },
   },
   {
@@ -232,16 +250,16 @@ export const data = [
       "The Night Café (French: Le Café de nuit) is an oil painting created by Dutch artist Vincent van Gogh in September 1888 in Arles. Its title is inscribed lower right beneath the signature. The painting is owned by Yale University and is currently held at the Yale University Art Gallery in New Haven, Connecticut. The interior depicted is the Café de la Gare, 30 Place Lamartine, run by Joseph-Michel Ginoux and his wife Marie, who in November 1888 posed for Van Gogh's and Gauguin's Arlésienne; a bit later, Joseph Ginoux evidently posed for both artists, too.",
     source: 'https://en.wikipedia.org/wiki/The_Night_Caf%C3%A9',
     artist: {
-      image: './assets/the-night-cafe/artist.jpg',
+      image: gogh3,
       name: 'Vincent Van Gogh',
     },
     images: {
-      thumbnail: './assets/the-night-cafe/thumbnail.jpg',
+      thumbnail: gogh3Thumb,
       hero: {
-        small: './assets/the-night-cafe/hero-small.jpg',
-        large: './assets/the-night-cafe/hero-large.jpg',
+        small: gogh3S,
+        large: gogh3L,
       },
-      gallery: './assets/the-night-cafe/gallery.jpg',
+      gallery: gogh3G,
     },
   },
   {
@@ -251,16 +269,16 @@ export const data = [
       'The Basket of Apples (French: Le panier de pommes) is a still life oil painting by French artist Paul Cézanne, which he created c. 1893. The painting is particularly remarkable for its creative composition, which rejected realistic representation in favour of distorting objects to create multiple perspectives. This approach eventually influenced other art movements, including Fauvism and Cubism. It belongs to the Helen Birch Bartlett Memorial Collection of the Art Institute of Chicago.',
     source: 'https://en.wikipedia.org/wiki/The_Basket_of_Apples',
     artist: {
-      image: './assets/the-basket-of-apples/artist.jpg',
+      image: poul,
       name: 'Paul Cézanne',
     },
     images: {
-      thumbnail: './assets/the-basket-of-apples/thumbnail.jpg',
+      thumbnail: poulThumb,
       hero: {
-        small: './assets/the-basket-of-apples/hero-small.jpg',
-        large: './assets/the-basket-of-apples/hero-large.jpg',
+        small: poulS,
+        large: poulL,
       },
-      gallery: './assets/the-basket-of-apples/gallery.jpg',
+      gallery: poulG,
     },
   },
   {

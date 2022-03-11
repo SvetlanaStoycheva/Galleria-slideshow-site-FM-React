@@ -1,21 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './assets/shared/logo.svg';
+import logo from '../assets/shared/logo.svg';
+import { useGlobalContext } from '../context';
 
 const Navbar = () => {
-  const [startSlideshow, setStartSlideshow] = useState(true);
-
-  const toggleSlideshowBtn = () => {
-    setStartSlideshow(!startSlideshow);
-  };
+  const {
+    toggleSlideshowBtn,
+    startSlideshow,
+    setStartSlideshow,
+  } = useGlobalContext();
 
   return (
     <nav className='navbar-container'>
       <div className='homepage-header'>
-        <Link to='/'>
-          <img src={logo} alt='logo' />
-        </Link>
-
+        <div onClick={setStartSlideshow(true)}>
+          <Link to='/'>
+            <img src={logo} alt='logo' />
+          </Link>
+        </div>
         <button
           type='button'
           className='start-slideshow-btn'

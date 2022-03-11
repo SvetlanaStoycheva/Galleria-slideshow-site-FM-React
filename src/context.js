@@ -1,10 +1,34 @@
 import React, { useState, useContext } from 'react';
-import homePage from './homePage';
-
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  return <AppContext.Provider value={{}}>{children}</AppContext.Provider>;
+  const [currentImage, setCurrentImage] = useState('Starry Night');
+  const [startSlideshow, setStartSlideshow] = useState(true);
+
+  //take the name of the clicked image
+  const handleSingleImage = (e) => {
+    const currentName = e.target.alt;
+    setCurrentImage(currentName);
+    // setStartSlideshow(false);
+  };
+
+  //toggle the slideshow btn start slideshow/stop slideshow; when the navdar button is clicked and when the homepage image container is clicked
+  const toggleSlideshowBtn = () => {
+    setStartSlideshow(!startSlideshow);
+  };
+  return (
+    <AppContext.Provider
+      value={{
+        handleSingleImage,
+        currentImage,
+        toggleSlideshowBtn,
+        startSlideshow,
+        setStartSlideshow,
+      }}
+    >
+      {children}
+    </AppContext.Provider>
+  );
 };
 
 //custom hook
