@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { data } from '../data';
 import SliderFooter from '../components/SliderFooter';
 import { useGlobalContext } from '../context';
-import { AiFillMacCommand } from 'react-icons/ai';
+import { FaSith } from 'react-icons/fa';
 
 function SliderPage() {
   const { currentImage } = useGlobalContext();
@@ -32,30 +32,38 @@ function SliderPage() {
       <section className='slider-container'>
         {/* image */}
         <article className='slider-image-container'>
-          <div className='slider-big-image-container'>
-            <img className='gallery-img' src={galleryImg} alt={name} />
-            <button className='view-image-btn'>
-              <span>
-                <AiFillMacCommand />
-              </span>
-              view image
-            </button>
-          </div>
+          <img className='gallery-img' src={galleryImg} alt={name} />
+          <button className='view-image-btn'>
+            <span className='view-image-btn-icon'>
+              <FaSith />
+            </span>
+            <p>view image</p>
+          </button>
           <div className='gallery-name-container'>
             <h1>{name}</h1>
             <h3>{artistName}</h3>
           </div>
-          <img src={artistImage} alt={artistName} />
+          <img className='artist-img' src={artistImage} alt={artistName} />
         </article>
         {/* info */}
         <article className='slider-info-container'>
           <div className='text-container'>
-            <p className='display'>{year}</p>
-            <p>{description}</p>
+            <p className='display slider-year'>{year}</p>
+            <p className='gallery-text'>{description}</p>
           </div>
-          <Link to={source}>
-            <button className='source-btn'>go to source</button>
-          </Link>
+
+          {/* <Link to={source}> */}
+          <button className='source-btn'>
+            <a
+              href={source}
+              target='_blank'
+              rel='noopener'
+              className='source-btn-link'
+            >
+              go to source
+            </a>
+          </button>
+          {/* </Link> */}
         </article>
       </section>
       <SliderFooter />

@@ -94,13 +94,12 @@ h4 {
 p {
   font-size: 14x;
   line-height: 28px;
-  margin-bottom: 1.25rem;
 }
 .display {
   font-weight: 700;
   font-size: 200px;
   line-height: 150px;
-  color: var(--clr-primary-light-gray);
+  color: rgba(227, 230, 230, 0.7);
 }
 .btn {
   background: var(--clr-primary-soft-blue);
@@ -239,4 +238,105 @@ Home Page
     font-size: 0.8rem;
     font-weight: 300;
   }
+}
+/*
+=============== 
+Slider Page
+===============
+*/
+.slider-image-container {
+  position: relative;
+  display: grid;
+  align-items: center;
+  margin-bottom: 14rem;
+}
+.gallery-img {
+  width: 90vw;
+  height: 24rem;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.view-image-btn {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  background: rgba(31, 32, 32, 0.8);
+  color: var(--clr-primary-white);
+  border: transparent;
+  padding: 0.7rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 11rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.view-image-btn:hover {
+  background: rgba(56, 58, 58, 0.8);
+}
+.view-image-btn-icon {
+  background: rgba(31, 32, 32, 0.8);
+  color: var(--clr-primary-white);
+  font-size: 1.2rem;
+  display: grid;
+  place-items: center;
+}
+.view-image-btn p {
+  text-transform: uppercase;
+  font-family: var(--ff-primary);
+  font-size: 0.8rem;
+  letter-spacing: var(--spacing);
+  margin-bottom: 0;
+}
+.gallery-name-container {
+  position: absolute;
+  left: 5%;
+  top: 85%;
+  background: var(--clr-primary-white);
+  padding: 2rem;
+  padding-right: 5rem;
+}
+.gallery-name-container h1 {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+.gallery-name-container h3 {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: var(--clr-primary-light-gray);
+}
+.artist-img {
+  position: absolute;
+  left: 10%;
+  top: 115%;
+}
+/* text info part */
+.slider-info-container {
+  padding: 2rem;
+}
+.text-container {
+  position: relative;
+  margin-top: 3rem;
+}
+.slider-year {
+  position: absolute;
+  font-size: 8rem;
+  top: -30%;
+  left: 30%;
+  z-index: -1;
+}
+.gallery-text {
+  color: var(--clr-primary-gray);
+}
+.source-btn {
+  background: transparent;
+  border: transparent;
+  text-transform: uppercase;
+
+  text-decoration: underline;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+.source-btn-link {
+  color: var(--clr-primary-light-gray);
 }
