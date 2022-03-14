@@ -332,17 +332,22 @@ Slider Page
   background: transparent;
   border: transparent;
   text-transform: uppercase;
-
   text-decoration: underline;
   margin-top: 3rem;
   cursor: pointer;
 }
+
 .source-btn-link {
   color: var(--clr-primary-light-gray);
+  transition: var(--transition);
+}
+.source-btn-link:hover {
+  color: var(--clr-primary-gray);
 }
 @media screen and (min-width: 780px) {
   .slider-image-container {
     margin-bottom: 8rem;
+    max-width: var(--max-width);
   }
   .gallery-img {
     width: 70vw;
@@ -379,5 +384,23 @@ Slider Page
     top: -30%;
     left: -15%;
     z-index: -1;
+  }
+}
+@media screen and (min-width: 980px) {
+  .slider-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .slider-image-container {
+    margin-bottom: 0rem;
+  }
+  .gallery-img {
+    width: 30vw;
+  }
+  .slider-info-container {
+    padding: 0 6rem;
+    margin-top: 4rem;
   }
 }

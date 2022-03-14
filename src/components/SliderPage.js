@@ -51,8 +51,6 @@ function SliderPage() {
             <p className='display slider-year'>{year}</p>
             <p className='gallery-text'>{description}</p>
           </div>
-
-          {/* <Link to={source}> */}
           <button className='source-btn'>
             <a
               href={source}
@@ -63,7 +61,6 @@ function SliderPage() {
               go to source
             </a>
           </button>
-          {/* </Link> */}
         </article>
       </section>
       <SliderFooter />
