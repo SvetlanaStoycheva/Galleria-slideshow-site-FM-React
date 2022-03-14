@@ -340,3 +340,44 @@ Slider Page
 .source-btn-link {
   color: var(--clr-primary-light-gray);
 }
+@media screen and (min-width: 780px) {
+  .slider-image-container {
+    margin-bottom: 8rem;
+  }
+  .gallery-img {
+    width: 70vw;
+    height: 30rem;
+    object-fit: cover;
+    margin: 0;
+    margin-left: 2rem;
+  }
+  .view-image-btn {
+    top: 80%;
+  }
+  .gallery-name-container {
+    left: 60%;
+    top: 0%;
+  }
+  .gallery-name-container h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .artist-img {
+    left: 75%;
+    top: 50%;
+  }
+  /* text info part */
+  .slider-info-container {
+    padding: 0 8rem;
+  }
+  .text-container {
+    margin-top: 0rem;
+  }
+  .slider-year {
+    position: absolute;
+    font-size: 10rem;
+    top: -30%;
+    left: -15%;
+    z-index: -1;
+  }
+}
