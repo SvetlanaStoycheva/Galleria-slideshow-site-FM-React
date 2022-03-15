@@ -4,6 +4,7 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
   const [currentImage, setCurrentImage] = useState('Starry Night');
   const [startSlideshow, setStartSlideshow] = useState(true);
+  const [isLigthboxGalleryOpen, setIsLigthboxGalleryOpen] = useState(false);
 
   //take the name of the clicked image
   const handleSingleImage = (e) => {
@@ -16,6 +17,11 @@ const AppProvider = ({ children }) => {
   const toggleSlideshowBtn = () => {
     setStartSlideshow(!startSlideshow);
   };
+
+  //open LightBoxGallery when view image btn is clicked
+  const openLightbox = () => {
+    setIsLigthboxGalleryOpen(true);
+  };
   return (
     <AppContext.Provider
       value={{
@@ -24,6 +30,9 @@ const AppProvider = ({ children }) => {
         toggleSlideshowBtn,
         startSlideshow,
         setStartSlideshow,
+        openLightbox,
+        isLigthboxGalleryOpen,
+        setIsLigthboxGalleryOpen,
       }}
     >
       {children}

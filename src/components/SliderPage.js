@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { data } from '../data';
 import SliderFooter from '../components/SliderFooter';
 import { useGlobalContext } from '../context';
 import { FaSith } from 'react-icons/fa';
+import LightboxGallery from '../components/LightBox';
 
 function SliderPage() {
-  const { currentImage } = useGlobalContext();
+  const {
+    currentImage,
+    openLightbox,
+    isLigthboxGalleryOpen,
+  } = useGlobalContext();
   const [activeImage, setActiveImage] = useState(data[0]);
   const image = data.find((i) => i.name === currentImage);
 
@@ -29,11 +33,14 @@ function SliderPage() {
 
   return (
     <>
+      {isLigthboxGalleryOpen && (
+        <LightboxGallery galleryImg={galleryImg} name={name} />
+      )}
       <section className='slider-container'>
         {/* image */}
         <article className='slider-image-container'>
           <img className='gallery-img' src={galleryImg} alt={name} />
-          <button className='view-image-btn'>
+          <button className='view-image-btn' onClick={openLightbox}>
             <span className='view-image-btn-icon'>
               <FaSith />
             </span>

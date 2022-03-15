@@ -404,3 +404,66 @@ Slider Page
     margin-top: 4rem;
   }
 }
+
+/*
+=============== 
+Lightbox Gallery
+===============
+*/
+.lightbox-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.85);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.lightbox-img {
+  width: 90vw;
+}
+.inner-lightbox-container {
+  width: 90vw;
+  display: grid;
+  justify-items: right;
+  align-content: center;
+}
+.lightbox-close-btn {
+  color: var(--clr-primary-very-light-gray);
+  background: transparent;
+  border: transparent;
+  font-family: var(--ff-primary);
+  letter-spacing: var(--spacing);
+  margin-bottom: 2rem;
+  align-content: right;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.lightbox-close-btn:hover {
+  color: var(--clr-primary-light-gray);
+}
+@media screen and (min-width: 780px) {
+  .inner-lightbox-container {
+    width: 80vw;
+    display: grid;
+    justify-items: right;
+  }
+  .lightbox-img {
+    width: 80vw;
+  }
+}
+@media screen and (min-width: 980px) {
+  .inner-lightbox-container {
+    width: 60vw;
+    display: grid;
+    justify-items: right;
+  }
+  .lightbox-img {
+    width: 60vw;
+    max-height: 35rem;
+    object-fit: cover;
+  }
+}
