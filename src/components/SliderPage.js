@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { data } from '../data';
+import React from 'react';
 import SliderFooter from '../components/SliderFooter';
 import { useGlobalContext } from '../context';
 import { FaSith } from 'react-icons/fa';
@@ -7,17 +6,11 @@ import LightboxGallery from '../components/LightBox';
 
 function SliderPage() {
   const {
-    currentImage,
+    currentSliderImage,
     openLightbox,
     isLigthboxGalleryOpen,
   } = useGlobalContext();
-  const [activeImage, setActiveImage] = useState(data[0]);
-  const image = data.find((i) => i.name === currentImage);
 
-  //
-  useEffect(() => {
-    setActiveImage(image);
-  }, []);
   const {
     name,
     artist: { image: artistImage, name: artistName },
@@ -29,7 +22,7 @@ function SliderPage() {
     },
     source,
     year,
-  } = activeImage;
+  } = currentSliderImage;
 
   return (
     <>

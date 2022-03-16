@@ -1,17 +1,18 @@
 import React, { useState, useContext } from 'react';
+import { data } from './data';
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  const [currentImage, setCurrentImage] = useState('Starry Night');
+  const [currentSliderImage, setCurrentSliderImage] = useState(data[0]);
   const [startSlideshow, setStartSlideshow] = useState(true);
   const [isLigthboxGalleryOpen, setIsLigthboxGalleryOpen] = useState(false);
 
-  //take the name of the clicked image
+  //take the name of the clicked image; set the current slider image
   const handleSingleImage = (e) => {
     const currentName = e.target.alt;
-    setCurrentImage(currentName);
+    const image = data.find((i) => i.name === currentName);
+    setCurrentSliderImage(image);
     setStartSlideshow(false);
-    // setStartSlideshow(false);
   };
 
   //toggle the slideshow btn start slideshow/stop slideshow; when the navdar button is clicked and when the homepage image container is clicked
@@ -27,7 +28,7 @@ const AppProvider = ({ children }) => {
     <AppContext.Provider
       value={{
         handleSingleImage,
-        currentImage,
+        currentSliderImage,
         toggleSlideshowBtn,
         startSlideshow,
         setStartSlideshow,
