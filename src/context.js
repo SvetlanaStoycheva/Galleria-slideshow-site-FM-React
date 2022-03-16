@@ -10,6 +10,7 @@ const AppProvider = ({ children }) => {
   const handleSingleImage = (e) => {
     const currentName = e.target.alt;
     setCurrentImage(currentName);
+    setStartSlideshow(false);
     // setStartSlideshow(false);
   };
 

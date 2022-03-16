@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className='navbar-container'>
       <div className='homepage-header'>
-        <div onClick={setStartSlideshow(true)}>
+        <div onClick={() => setStartSlideshow(true)}>
           <Link to='/'>
             <img src={logo} alt='logo' />
           </Link>
