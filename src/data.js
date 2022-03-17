@@ -64,11 +64,29 @@ import poulS from './assets/the-basket-of-apples/hero-small.jpg';
 import poulL from './assets/the-basket-of-apples/hero-large.jpg';
 import poulG from './assets/the-basket-of-apples/gallery.jpg';
 //
-// import rousseau from ;
-// import rousseauThumb from ;
-// import rousseauS from ;
-// import rousseauL from ;
-// import rousseauG from ;
+import poul2 from './assets/the-boy-in-the-red-vest/artist.jpg';
+import poul2Thumb from './assets/the-boy-in-the-red-vest/thumbnail.jpg';
+import poul2S from './assets/the-boy-in-the-red-vest/hero-small.jpg';
+import poul2L from './assets/the-boy-in-the-red-vest/hero-large.jpg';
+import poul2G from './assets/the-boy-in-the-red-vest/gallery.jpg';
+//
+import eyck from './assets/arnolfini-portrait/artist.jpg';
+import eyckThumb from './assets/arnolfini-portrait/thumbnail.jpg';
+import eyckS from './assets/arnolfini-portrait/hero-small.jpg';
+import eyckL from './assets/arnolfini-portrait/hero-large.jpg';
+import eyckG from './assets/arnolfini-portrait/gallery.jpg';
+//
+import vinci2 from './assets/mona-lisa/artist.jpg';
+import vinci2Thumb from './assets/mona-lisa/thumbnail.jpg';
+import vinci2S from './assets/mona-lisa/hero-small.jpg';
+import vinci2L from './assets/mona-lisa/hero-large.jpg';
+import vinci2G from './assets/mona-lisa/gallery.jpg';
+//
+import fragonard from './assets/the-swing/artist.jpg';
+import fragonardThumb from './assets/the-swing/thumbnail.jpg';
+import fragonardS from './assets/the-swing/hero-small.jpg';
+import fragonardL from './assets/the-swing/hero-large.jpg';
+import fragonardG from './assets/the-swing/gallery.jpg';
 
 export const data = [
   {
@@ -288,16 +306,16 @@ export const data = [
       'Cézanne painted four oil portraits of this Italian boy in the red vest, all in different poses, which allowed him to study the relationship between the figure and space. The most famous of the four, and the one commonly referred to by this title, is the one which depicts the boy in a melancholic seated pose with his elbow on a table and his head cradled in his hand. It is currently held in Zürich, Switzerland. The other three portraits, of different poses, are in museums in the US',
     source: 'https://en.wikipedia.org/wiki/The_Boy_in_the_Red_Vest',
     artist: {
-      image: './assets/the-boy-in-the-red-vest/artist.jpg',
+      image: poul2,
       name: 'Paul Cézanne',
     },
     images: {
-      thumbnail: './assets/the-boy-in-the-red-vest/thumbnail.jpg',
+      thumbnail: poul2Thumb,
       hero: {
-        small: './assets/the-boy-in-the-red-vest/hero-small.jpg',
-        large: './assets/the-boy-in-the-red-vest/hero-large.jpg',
+        small: poul2S,
+        large: poul2L,
       },
-      gallery: './assets/the-boy-in-the-red-vest/gallery.jpg',
+      gallery: poul2G,
     },
   },
   {
@@ -307,16 +325,16 @@ export const data = [
       'It is considered one of the most original and complex paintings in Western art, because of its beauty, complex iconography, geometric orthogonal perspective, and expansion of the picture space with the use of a mirror. According to Ernst Gombrich "in its own way it was as new and revolutionary as Donatello\'s or Masaccio\'s work in Italy. A simple corner of the real world had suddenly been fixed on to a panel as if by magic ... For the first time in history the artist became the perfect eye-witness in the truest sense of the term".',
     source: 'https://en.wikipedia.org/wiki/Arnolfini_Portrait',
     artist: {
-      image: './assets/arnolfini-portrait/artist.jpg',
+      image: eyck,
       name: 'Jan van Eyck',
     },
     images: {
-      thumbnail: './assets/arnolfini-portrait/thumbnail.jpg',
+      thumbnail: eyckThumb,
       hero: {
-        small: './assets/arnolfini-portrait/hero-small.jpg',
-        large: './assets/arnolfini-portrait/hero-large.jpg',
+        small: eyckS,
+        large: eyckL,
       },
-      gallery: './assets/arnolfini-portrait/gallery.jpg',
+      gallery: eyckG,
     },
   },
   {
@@ -326,16 +344,16 @@ export const data = [
       'The Mona Lisa (/ˌmoʊnə ˈliːsə/; italian: La Gioconda [la dʒoˈkonda] or Monna Lisa [ˈmɔnna ˈliːza]) is a half-length portrait painting by Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as "the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world". The painting\'s novel qualities include the subject\'s enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.',
     source: 'https://en.wikipedia.org/wiki/Mona_Lisa',
     artist: {
-      image: './assets/mona-lisa/artist.jpg',
+      image: vinci2,
       name: 'Leonardo da Vinci',
     },
     images: {
-      thumbnail: './assets/mona-lisa/thumbnail.jpg',
+      thumbnail: vinci2Thumb,
       hero: {
-        small: './assets/mona-lisa/hero-small.jpg',
-        large: './assets/mona-lisa/hero-large.jpg',
+        small: vinci2S,
+        large: vinci2L,
       },
-      gallery: './assets/mona-lisa/gallery.jpg',
+      gallery: vinci2G,
     },
   },
   {
@@ -345,16 +363,16 @@ export const data = [
       'The painting depicts an elegant young woman on a swing. A smiling young man, hiding in the bushes on the left, watches her from a vantage point that allows him to see up into her billowing dress, where his arm is pointed with hat in hand. A smiling older man, who is nearly hidden in the shadows on the right, propels the swing with a pair of ropes. The older man appears to be unaware of the young man. As the young lady swings high, she throws her left leg up, allowing her dainty shoe to fly through the air.',
     source: 'https://en.wikipedia.org/wiki/The_Swing_(Fragonard)',
     artist: {
-      image: './assets/the-swing/artist.jpg',
+      image: fragonard,
       name: 'Jean-Honoré Fragonard',
     },
     images: {
-      thumbnail: './assets/the-swing/thumbnail.jpg',
+      thumbnail: fragonardThumb,
       hero: {
-        small: './assets/the-swing/hero-small.jpg',
-        large: './assets/the-swing/hero-large.jpg',
+        small: fragonardS,
+        large: fragonardL,
       },
-      gallery: './assets/the-swing/gallery.jpg',
+      gallery: fragonardG,
     },
   },
 ];
