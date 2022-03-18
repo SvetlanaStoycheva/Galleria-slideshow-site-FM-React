@@ -405,6 +405,18 @@ Slider Page
     max-height: 28rem;
     object-fit: cover;
   }
+  .gallery-name-container {
+    padding: 2rem;
+    padding-right: 5rem;
+  }
+  .gallery-name-container h1 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  .gallery-name-container h3 {
+    line-height: 1.4rem;
+  }
+
   /* text info part */
   .slider-info-container {
     padding: 0 6rem;
@@ -460,24 +472,20 @@ Lightbox Gallery
 }
 @media screen and (min-width: 780px) {
   .inner-lightbox-container {
-    width: 80vw;
+    width: 50vw;
     display: grid;
     justify-items: right;
   }
   .lightbox-img {
-    width: 80vw;
+    max-width: 35rem;
+    max-height: 38rem;
+    object-fit: cover;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 980px) {
   .inner-lightbox-container {
-    width: 60vw;
-    display: grid;
-    justify-items: right;
-  }
-  .lightbox-img {
-    width: 60vw;
-    max-height: 35rem;
-    object-fit: cover;
+    width: 40vw;
   }
 }
 /*
