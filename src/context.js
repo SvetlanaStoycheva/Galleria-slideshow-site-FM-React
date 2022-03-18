@@ -8,9 +8,8 @@ const AppProvider = ({ children }) => {
   const [isLigthboxGalleryOpen, setIsLigthboxGalleryOpen] = useState(false);
 
   //take the name of the clicked image on the homepage; set the current slider image
-  const handleSingleImage = (e) => {
-    const currentName = e.target.alt;
-    const image = data.find((i) => i.name === currentName);
+  const handleSingleImage = (name) => {
+    const image = data.find((i) => i.name === name);
     setCurrentSliderImage(image);
     setStartSlideshow(false);
   };

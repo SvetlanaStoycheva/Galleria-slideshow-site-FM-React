@@ -16,17 +16,14 @@ const HomePage = () => {
           } = item;
 
           return (
-            <div
-              className='single-gallery-image-container'
-              key={index}
-              onClick={handleSingleImage}
-            >
-              <Link to='/slider'>
+            <div className='single-gallery-image-container' key={index}>
+              <Link to='/slider' onClick={() => handleSingleImage(name)}>
                 <img
                   className='homepage-gallery-image'
                   src={`${galleryImage}`}
                   alt={name}
                 />
+
                 <div className='single-gallery-image-text'>
                   <h1>{name}</h1>
                   <h3>{artistName}</h3>

@@ -2,10 +2,7 @@ import React from 'react';
 import { useGlobalContext } from '../context';
 
 const LightBox = ({ galleryImg, name }) => {
-  const {
-    isLigthboxGalleryOpen,
-    setIsLigthboxGalleryOpen,
-  } = useGlobalContext();
+  const { setIsLigthboxGalleryOpen } = useGlobalContext();
   console.log(galleryImg, name);
 
   return (
