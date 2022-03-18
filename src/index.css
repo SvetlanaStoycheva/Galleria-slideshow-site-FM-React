@@ -467,3 +467,62 @@ Lightbox Gallery
     object-fit: cover;
   }
 }
+/*
+=============== 
+Slider Footer
+===============
+*/
+.footer-container {
+  margin-top: 5rem;
+}
+.footer-inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.footer-name-container h3 {
+  font-size: 1rem;
+}
+.footer-name-container h4 {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.arrow-down,
+.arrow-up {
+  color: var(--clr-primary-light-gray);
+  font-size: 1.6rem;
+}
+.arrow-down {
+  margin-right: 1rem;
+}
+.arrow-active {
+  color: var(--clr-primary-black);
+  cursor: pointer;
+}
+.arrow-btn {
+  border: transparent;
+  background: transparent;
+}
+.line {
+  display: flex;
+}
+.line1 {
+  border-top: 2px solid var(--clr-primary-gray);
+  width: 10rem;
+}
+.line1-30 {
+  border-top: 2px solid var(--clr-primary-gray);
+  width: 90vw;
+}
+.line1-100 {
+  border-top: 2px solid var(--clr-primary-gray);
+  width: 100%;
+}
+.line2 {
+  border-top: 2px solid var(--clr-primary-very-light-gray);
+  width: 100%;
+}
+.line2-100 {
+  border-top: 2px solid var(--clr-primary-gray);
+}
