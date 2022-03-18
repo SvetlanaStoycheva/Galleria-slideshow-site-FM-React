@@ -17,8 +17,8 @@ function SliderPage() {
     description,
     images: {
       gallery: galleryImg,
-      hero: { small: smallImg, large: largeImg },
-      thumbnail: tumbImg,
+      // hero: { small: smallImg, large: largeImg },
+      // thumbnail: tumbImg,
     },
     source,
     year,
@@ -55,7 +55,7 @@ function SliderPage() {
             <a
               href={source}
               target='_blank'
-              rel='noopener'
+              rel='noreferrer'
               className='source-btn-link'
             >
               go to source

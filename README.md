@@ -7,7 +7,15 @@
   - Navigate the slideshow and view each painting in a lightbox
 
 <p align-items: center>
-    <img src='./readme-images/Screenshot-space-tourism-01.png' width='250'>
+    <img src='./readme-images/Screenshot-gallery-site-1.png' width='250'>
+</p>
+<br/>
+<p align-items: center>
+    <img src='./readme-images/Screenshot-gallery-site-2.png' width='250'>
+</p>
+<br/>
+<p align-items: center>
+    <img src='./readme-images/Screenshot-gallery-site-3.png' width='250'>
 </p>
 <br/>
 
